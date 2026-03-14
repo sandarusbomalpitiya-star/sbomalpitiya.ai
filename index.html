@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SBOMALPITIYA - AI Specialist and Developer Personal Portfolio">
+    <title>SBOMALPITIYA | AI Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Intro Popup overlays the screen on load -->
+    <div id="intro-popup" class="intro-overlay">
+        <h1 class="glitch" data-text="SBOMALPITIYA">SBOMALPITIYA</h1>
+        <p class="subtitle">AI & Tech Visionary</p>
+        <div class="loader"></div>
+    </div>
+
+    <!-- Professional Tech Video Background -->
+    <div class="video-container">
+        <!-- Using a high quality tech/network video from mixkit for the AI feel -->
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-digital-animation-of-a-network-of-neurons-31291-large.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Main Content hidden until popup finishes -->
+    <main class="content" id="main-content">
+        <header>
+            <nav class="glass-nav">
+                <div class="logo">SB.</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="home" class="hero">
+            <div class="hero-content glass-panel">
+                <h1 class="hero-title">Hello, I'm <br><span class="highlight">SBOMALPITIYA</span></h1>
+                <h2 class="hero-subtitle">Artificial Intelligence Engineer & Developer</h2>
+                <p class="hero-text">Building intelligent systems for the future. Exploring the intersections of machine learning, neural networks, and modern web technologies to create stunning digital experiences.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="about" class="section">
+            <div class="glass-panel w-100">
+                <h2>About Intelligences</h2>
+                <p>I am a passionate AI enthusiast dedicated to crafting seamless digital experiences that leverage the power of advanced algorithms. With a strong background in web development and data science, I create solutions that are both smart and beautifully designed. My goal is to bridge the gap between human creativity and artificial intelligence to design the future today.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="glass-panel w-100" style="max-width: 1200px;">
+                <h2>My Work & Media</h2>
+                <div class="gallery-grid" id="gallery-container">
+                    <!-- Dynamic Gallery items will be injected here via JS -->
+                    <p id="empty-state" class="empty-state">System initializing... Awaiting media inputs via Admin portal.</p>
+                </div>
+                <div style="margin-top: 3rem; display: flex; justify-content: center;">
+                    <a href="admin.html" class="btn btn-secondary">Access Admin Panel</a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

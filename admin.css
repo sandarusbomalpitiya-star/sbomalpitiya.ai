@@ -1,0 +1,164 @@
+.admin-container {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.admin-card {
+    width: 100%;
+    max-width: 450px;
+    padding: 3rem;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.auth-tabs {
+    display: flex;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(0, 240, 255, 0.3);
+}
+
+.auth-tab {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: #888;
+    padding: 1rem;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+}
+
+.auth-tab:hover {
+    color: #fff;
+}
+
+.auth-tab.active {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.6);
+}
+
+.auth-form h2 {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    color: #fff;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.input-group input, 
+.input-group select {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 240, 255, 0.3);
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.input-group input:focus, 
+.input-group select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
+}
+
+.error-msg {
+    color: #ff3366;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 240, 255, 0.3);
+}
+
+.dashboard-header h2 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.upload-form {
+    background: rgba(0,0,0,0.3);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.current-media h3 {
+    margin-bottom: 1rem;
+    font-family: 'Rajdhani', sans-serif;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.admin-media-list {
+    list-style: none;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.admin-media-list li {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+    border-left: 3px solid var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-btn {
+    background: transparent;
+    border: 1px solid #ff3366;
+    color: #ff3366;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.delete-btn:hover {
+    background: #ff3366;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 51, 102, 0.5);
+}
+
+small {
+    color: #aaa;
+    font-size: 0.8rem;
+    display: block;
+    margin-top: 5px;
+}
